@@ -55,9 +55,13 @@ Tell the team in your PR description so everyone re-runs `pip install -r require
 src/
   common/          shared Command enum and MediaController interface
   command_parser/  text to Command mapping, invalid command handling
+  voice_input/     microphone capture, speech-to-text, timeout handling
   volume/          volume control
   (more modules are added as each feature merges)
 ```
+
+The voice-input feature uses `SpeechRecognition`. Microphone capture also
+requires the platform's PyAudio package to be installed.
 
 Each module keeps its own tests in a `tests/` folder next to the code.
 
