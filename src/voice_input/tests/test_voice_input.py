@@ -49,6 +49,8 @@ def test_capture_returns_trimmed_transcription():
         sr.WaitTimeoutError,
         sr.UnknownValueError,
         sr.RequestError,
+        OSError,
+        AttributeError,
     ],
 )
 def test_capture_returns_none_for_unusable_input(error):

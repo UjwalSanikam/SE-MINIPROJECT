@@ -37,6 +37,8 @@ class VoiceInput:
                 )
             text = self._recognizer.recognize_google(audio)
         except (
+            AttributeError,
+            OSError,
             sr.WaitTimeoutError,
             sr.UnknownValueError,
             sr.RequestError,
