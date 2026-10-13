@@ -2,6 +2,12 @@
 
 Voice Assistant for Multimedia Controls: a simple Python assistant that controls volume, playback and tracks using voice commands. See [REQUIREMENTS.md](REQUIREMENTS.md) for the full requirements and work division.
 
+## Project documentation
+
+- [Software Requirements Specification (SRS)](docs/SRS.md)
+- [Software Architecture and Design Specification (SAD)](docs/SAD.md)
+- [Software Test Plan](docs/Test_Plan.md)
+
 ## Supported commands
 
 Volume Up, Volume Down, Play, Pause, Resume, Next, Previous. Anything else is ignored without crashing.
